@@ -1,6 +1,7 @@
 # Set path to oh-my-zsh directory
 ZSH=$HOME/dotfiles/vendors/oh-my-zsh
 ZSH_THEME="bira"
+DISABLE_AUTO_TITLE="true"
 
 # Check for updates on initial load...
 if [ "$DISABLE_AUTO_UPDATE" != "true" ]
