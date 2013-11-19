@@ -1,0 +1,20 @@
+ 
+" Key Mapping
+"
+
+" ctrl-c as ESC
+imap <C-c> <ESC>
+
+" Mapping for FuzzyFinder.vim
+nnoremap <silent> <C-b><C-b> :<C-u>FufBuffer<CR>
+nnoremap <silent> <C-f><C-f> :<C-u>FufFile<CR>
+
+" Mapping for Buffers
+nnoremap <silent> <C-b><C-n> :<C-u>bn<CR>
+nnoremap <silent> <C-b><C-p> :<C-u>bp<CR>
+
+" Mapping for Tabs
+nnoremap <silent> <C-t><C-t> :<C-u>tabnew<CR>:tabmove<CR>
+nnoremap <silent> <C-t><C-p> :<C-u>tabprevious<CR>
+nnoremap <silent> <C-t><C-n> :<C-u>tabnext<CR>
+nnoremap <silent> <C-t><C-k> :<C-u>tabclose<CR>

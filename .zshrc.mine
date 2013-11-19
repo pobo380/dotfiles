@@ -1,0 +1,33 @@
+# LANG
+export LANG=ja_JP.UTF-8
+export LC_ALL=ja_JP.UTF-8
+
+# macports
+export HISTCONTROL=ignoreboth
+
+# EDITOR
+export EDITOR=/usr/bin/vim
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# nvm - node.js version manager
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
+
+# shorten bundle exec.
+alias be='bundle exec'
+
+## My Aliases
+alias rmbkr='find . -name "*~" | xargs rm'
+alias rmbk='rm *~'
+
+## display VCS infomation.
+# autoload -Uz vcs_info
+# zstyle ':vcs_info:*' formats '(%s)-[%b]'
+# zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
+# precmd () {
+#   psvar=()
+#   LANG=en_US.UTF-8 vcs_info
+#   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+# }
+# RPROMPT="%1(v|%F{green}%1v%f|)"

@@ -1,0 +1,38 @@
+" enable Neobundle.vim
+if has('vim_starting')
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+""""""""""""""""""""""""""""""""""""""""
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/neocomplcache'
+
+NeoBundle 'L9'
+NeoBundle 'FuzzyFinder'
+
+NeoBundle 'tpope/vim-endwise'
+
+" color schemes
+NeoBundle 'wombat256.vim'
+""""""""""""""""""""""""""""""""""""""""
+
+NeoBundleCheck
+
+" load rc file for bundle
+let s:bundle_rc_dir = $HOME."/.vim/vimrc/bundle/"
+
+function s:loadBundleRcfiles(bundle_rc_dir)
+  let bundle_list = map(neobundle#config#get_neobundles(), 'v:val.name')
+  for bundle in bundle_list
+    let bundle_rc = expand(a:bundle_rc_dir . "/" . bundle . ".vim")
+    if filereadable(bundle_rc)
+      exec "source" bundle_rc
+    endif
+  endfor
+endfunction
+
+call s:loadBundleRcfiles(s:bundle_rc_dir)
