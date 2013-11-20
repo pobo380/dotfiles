@@ -29,3 +29,8 @@ set list
 set modeline
 set modelines=5
 set scrolloff=20
+
+" Enable Matchit
+if !exists('loaded_matchit')
+  runtime macros/matchit.vim
+endif
