@@ -25,3 +25,5 @@ alias rmbkr='find . -name "*~" | xargs rm'
 alias rmbk='rm *~'
 
 alias g='git'
+
+alias td='tmux detach-client'
