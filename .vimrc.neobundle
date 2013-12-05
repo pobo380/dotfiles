@@ -22,6 +22,9 @@ NeoBundle 'tpope/vim-surround'
 
 NeoBundle 'bling/vim-airline'
 
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'slim-template/vim-slim'
+
 "NeoBundle 'alpaca-tc/alpaca_tags'
 
 " color schemes
