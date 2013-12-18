@@ -29,6 +29,8 @@ NeoBundle 'slim-template/vim-slim'
 
 " color schemes
 NeoBundle 'wombat256.vim'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'sjl/badwolf'
 """"""""""""""""""""""""""""""""""""""""
 
 NeoBundleCheck

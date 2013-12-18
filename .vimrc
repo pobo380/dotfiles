@@ -16,7 +16,8 @@ filetype plugin on
 set t_Co=256
 
 " Color Scheme
-colorscheme wombat256mod
+"colorscheme wombat256mod
+colorscheme badwolf
 
 " Basic settings
 set tabstop=2
