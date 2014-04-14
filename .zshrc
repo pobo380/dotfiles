@@ -97,3 +97,6 @@ fi
 
 # Load my settings
 [ -f ~/.zshrc.mine ] && source $HOME/.zshrc.mine
+
+# Load local settings
+[ -f ~/.zshrc.local ] && source $HOME/.zshrc.local
